@@ -1,0 +1,5 @@
+@mixin container($border, $background:color.$no-color, $padding:10px){
+    padding: $padding;
+    background-color:$background;
+    border-radius:$border;
+  }
