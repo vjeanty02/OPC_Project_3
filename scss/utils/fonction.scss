@@ -38,7 +38,7 @@
     justify-content: space-between;
   }
 
-@mixin container($border, $background:color.$no-color, $padding:10px){
+@mixin container($border, $background, $padding){
     padding: $padding;
     background-color:$background;
     border-radius:$border;
