@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "roboto", Courier, monospace;
+  text-decoration: none;
+}
+
+.header {
+  padding: 25px;
+  background: #fff;
+  border-radius: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+}
+.header__button {
+  grid-area: 1/1/2/2;
+  align-self: center;
+  align-items: center;
+}
+.header__logo {
+  grid-area: 1/2/2/3;
+  text-align: center;
+}
+
+/*=============================================
+=            Color            =
+=============================================*/
+/*=====  End of Color  ======*/
+footer {
+  padding: 20px;
+  background: #000;
+  border-radius: 0;
+}
+
+.footer {
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.footer__link, .footer__heading {
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */

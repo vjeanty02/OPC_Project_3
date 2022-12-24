@@ -1,2 +1,20 @@
-@use "../../base/mixin.scss" as mx;
-@use "../../base/variable.scss" as vr;
+@use "../utils/mixin" as mx;
+
+.header
+{
+    @include mx.container($border:0, $background:#fff, $padding:25px);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    &__button
+    {
+        grid-area: 1 / 1 / 2 / 2;
+        align-self: center;
+        align-items: center;
+    }
+    &__logo
+    {
+        grid-area: 1 / 2 / 2 / 3;
+        text-align: center;
+    }
+}

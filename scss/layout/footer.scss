@@ -1,28 +1,18 @@
-@use "../../base/mixin.scss" as mx;
-@use "../../base/variable.scss" as vr;
+@use "../utils/mixin.scss" as mx;
+@use "../utils/variable" as vr;
 
+footer
+{
+    @include mx.container($border:0, $background:#000, $padding:20px);
+}
 .footer
 {
-    @include mx.container($border:0px, $background:$color-footer, $padding:0px);
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    
-   
-    div div
+    &__link, &__heading
     {
-        display: flex;
-        gap: 10px;  
-    }
-    a:hover
-    {
-        text-decoration: underline;
-    }
-    >div
-    {
-        @include mixins.container($size:75%);
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-       
+        color : #fff;
     }
 }

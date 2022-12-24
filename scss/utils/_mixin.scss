@@ -40,6 +40,6 @@
 
 @mixin container($border, $background, $padding){
     padding: $padding;
-    background-color:$background;
+    background:$background;
     border-radius:$border;
   }
