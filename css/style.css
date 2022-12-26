@@ -29,6 +29,79 @@
 =            Color            =
 =============================================*/
 /*=====  End of Color  ======*/
+.location {
+  padding: 20px;
+  background: linear-gradient(0deg, rgb(243, 243, 243) 0%, rgb(242, 242, 242) 68%, rgb(239, 239, 239) 81%, rgb(237, 237, 237) 85%, rgb(234, 234, 234) 91%, rgb(230, 230, 230) 94%, rgb(228, 228, 228) 98%, rgb(215, 215, 215) 100%);
+  border-radius: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.explorer {
+  padding: 20px;
+  background: #fafafa;
+  border-radius: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.working {
+  max-width: 1400px;
+  margin: auto;
+}
+.working__container {
+  display: flex;
+}
+.working__card {
+  display: flex;
+  padding: 15px;
+  background-color: #f6f6f6;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 4px 4px 8px -2px #d0d0d0;
+  align-items: center;
+  gap: 10px;
+}
+
+.restaurant__container {
+  max-width: 1400px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+}
+.restaurant__card1 {
+  grid-area: 1/2/3/3;
+}
+.restaurant__card2 {
+  grid-area: 2/1/4/2;
+}
+.restaurant__card3 {
+  grid-area: 3/2/5/3;
+}
+.restaurant__card4 {
+  grid-area: 2/3/4/4;
+}
+
+.image-restaurants {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+  border-radius: 20px 20px 0 0;
+}
+
+/*=============================================
+=            Color            =
+=============================================*/
+/*=====  End of Color  ======*/
 footer {
   padding: 20px;
   background: #000;
