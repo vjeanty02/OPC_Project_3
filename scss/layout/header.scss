@@ -1,5 +1,8 @@
 @use "../utils/mixin" as mx;
 
+/*=============================================
+=            Header            =
+=============================================*/
 .header
 {
     @include mx.container($border:0, $background:#fff, $padding:20px);
@@ -19,3 +22,5 @@
         font-family: "Shrikhand", cursive;
     }
 }
+
+

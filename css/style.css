@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"); /*=============================================
+=            General-Reset            =
+=============================================*/
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +9,9 @@
   text-decoration: none;
 }
 
+/*=============================================
+=            Header            =
+=============================================*/
 .header {
   padding: 20px;
   background: #fff;
@@ -27,11 +32,7 @@
 }
 
 /*=============================================
-=            Color            =
-=============================================*/
-/*=====  End of Color  ======*/
-/*=============================================
-=            Location            =
+=            Home-Location            =
 =============================================*/
 .location {
   padding: 20px;
@@ -51,9 +52,8 @@
   color: #353535;
 }
 
-/*=====  End of Location  ======*/
 /*=============================================
-=            Explorer            =
+=            Home-Explorer            =
 =============================================*/
 .explorer {
   padding: 20px;
@@ -85,9 +85,8 @@
   font-weight: 300;
 }
 
-/*=====  End of Explorer  ======*/
 /*=============================================
-=            Working            =
+=            Home-Working            =
 =============================================*/
 .working {
   display: flex;
@@ -132,15 +131,14 @@
   color: #965add;
 }
 
-@media all and (min-width: 0px) and (max-width: 768px) {
+@media all and (max-width: 768px) {
   .working__container {
     display: flex;
     flex-direction: column;
   }
 }
-/*=====  End of Working  ======*/
 /*=============================================
-=            Restaurant            =
+=            Home-Restaurant            =
 =============================================*/
 .restaurant {
   padding: 30px 40px 40px 40px;
@@ -228,7 +226,7 @@
   border-radius: 20px 20px 0 0;
 }
 
-@media all and (min-width: 0px) and (max-width: 768px) {
+@media all and (max-width: 768px) {
   .restaurant__container {
     display: flex;
     flex-direction: column;
@@ -263,11 +261,9 @@
     transform-origin: 0% 100%;
   }
 }
-/*=====  End of Restaurant  ======*/
 /*=============================================
-=            Color            =
+=            Footer            =
 =============================================*/
-/*=====  End of Color  ======*/
 footer {
   padding: 20px;
   background: #353535;

@@ -3,7 +3,7 @@
 
 
 /*=============================================
-=            Location            =
+=            Home-Location            =
 =============================================*/
 .location
 {
@@ -23,12 +23,8 @@
         color: vr.$color-footer;
     }
 }
-/*=====  End of Location  ======*/
-
-
-
 /*=============================================
-=            Explorer            =
+=            Home-Explorer            =
 =============================================*/
 .explorer
 {
@@ -47,12 +43,8 @@
         font-weight: 300;
     }
 }
-/*=====  End of Explorer  ======*/
-
-
-
 /*=============================================
-=            Working            =
+=            Home-Working            =
 =============================================*/
 .working
 {
@@ -62,10 +54,7 @@
     padding: 30px;
     max-width: 1400px;
     margin: auto;
-    &__heading
-    {
-
-    }
+    
     &__container
     {
         display: flex;
@@ -108,9 +97,9 @@
         
     }
 }
-@media all and (min-width: 0px) and (max-width: 768px)
+@media all and (max-width: 768px)
 {
-    .working
+    .working /* mobile */
     {
         &__container
         {
@@ -119,13 +108,9 @@
         }
     }
 }
-/*=====  End of Working  ======*/
-
-
-
 
 /*=============================================
-=            Restaurant            =
+=            Home-Restaurant            =
 =============================================*/
 .restaurant
 {
@@ -230,7 +215,9 @@
     height: 200px;
     border-radius: 20px 20px 0 0;
 }
-@media all and (min-width: 0px) and (max-width: 768px)
+@media all and (max-width: 768px) /* mobile */
+
+
 {
     .restaurant
     {
@@ -241,7 +228,7 @@
         }
     }
 }
-@media all and (min-width: 769px) and (max-width: 1200px)
+@media all and (min-width: 769px) and (max-width: 1200px) /* tablet */
 {
     .restaurant
     {
@@ -279,5 +266,3 @@
       transform-origin: 0% 100%;
     }
   }
-  
-/*=====  End of Restaurant  ======*/

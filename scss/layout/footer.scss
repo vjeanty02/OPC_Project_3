@@ -1,6 +1,8 @@
 @use "../utils/mixin.scss" as mx;
 @use "../utils/variable" as vr;
-
+/*=============================================
+=            Footer            =
+=============================================*/
 footer
 {
     @include mx.container($border:0, $background:vr.$color-footer, $padding:20px);
@@ -27,3 +29,5 @@ footer
         font-weight: 300;
     }
 }
+
+
