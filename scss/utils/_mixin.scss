@@ -1,41 +1,49 @@
-@mixin flex{
+@mixin flex($gap:0px){
     display: flex;
+    gap: $gap;
   }
   
-  @mixin flex-centre {
+  @mixin flex-center($gap:0px) {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: $gap;
   }
-  @mixin flex-around {
+  @mixin flex-around($gap:0px) {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    gap: $gap;
   }
-  @mixin flex-between {
+  @mixin flex-between($gap:0px) {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: $gap;
   }
-  @mixin flex-column {
+  @mixin flex-column($gap:0px) {
     display: flex;
     flex-direction: column;
+    gap: $gap;
   }
-  @mixin flex-column-centre {
+  @mixin flex-column-center($gap:0px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: $gap;
   }
-  @mixin flex-column-around {
+  @mixin flex-column-around($gap:0px) {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    gap: $gap;
   }
-  @mixin flex-column-between {
+  @mixin flex-column-between($gap:0px) {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: $gap;
   }
 
 @mixin container($border, $background, $padding){

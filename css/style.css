@@ -63,8 +63,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
   gap: 20px;
+  text-align: center;
 }
 .explorer__button {
   background: linear-gradient(to bottom, #FF79DA 5%, #9356DC 100%);
@@ -93,6 +93,8 @@
   flex-direction: column;
   gap: 20px;
   padding: 30px;
+  background: transparent;
+  border-radius: 0;
   max-width: 1400px;
   margin: auto;
 }
@@ -100,6 +102,8 @@
   display: flex;
   gap: 20px;
   padding: 20px;
+  background: transparent;
+  border-radius: 0;
 }
 .working__container h6 {
   border-radius: 50%;
@@ -113,13 +117,13 @@
 }
 .working__card {
   display: flex;
+  gap: 10px;
   padding: 20px 15px;
-  background-color: #f6f6f6;
-  width: 100%;
+  background: #f6f6f6;
   border-radius: 20px;
+  width: 100%;
   box-shadow: 4px 4px 8px -2px #d0d0d0;
   align-items: center;
-  gap: 10px;
   font-weight: bold;
   cursor: pointer;
 }
@@ -135,6 +139,7 @@
   .working__container {
     display: flex;
     flex-direction: column;
+    gap: 30px;
   }
 }
 /*=============================================
@@ -142,7 +147,8 @@
 =============================================*/
 .restaurant {
   padding: 30px 40px 40px 40px;
-  background-color: #f6f6f6;
+  background: #f6f6f6;
+  border-radius: 0px;
 }
 .restaurant__container {
   max-width: 1400px;
@@ -155,7 +161,7 @@
 }
 .restaurant__card {
   padding: 0 0 20px 0;
-  background-color: #ffffff;
+  background: #ffffff;
   border-radius: 20px;
   cursor: pointer;
   box-shadow: 4px 4px 8px -2px #d0d0d0;
