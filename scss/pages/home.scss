@@ -178,27 +178,34 @@
     
     &__iheart--regular
     {
-        grid-area: 1 / 4 / 3 / 5;
-        text-align: right;
-        font-size: 20px;
+        grid-area: 1/4/3/5;
+        margin: auto;
+        font-size: 30px;
         color: #000;
-        padding-right: 5px;
+        padding: 5px;
     }
     &__iheart--solid
     {
-        grid-area: 1 / 4 / 3 / 5;
-        text-align: right;
-        font-size: 30px;   
-        @include mx.iheart--color;
-        cursor: pointer;
-        transition:all 0.5s;
         padding: 5px;
-        overflow: hidden;
+        grid-area: 1/4/3/5;
+        margin: auto;
+        font-size: 10px;
+        color: transparent;
+        -webkit-background-clip: text;
+         -moz-background-clip: text;
+        
         &:hover
         {
-            overflow: visible;
+            font-size: 30px;
+            transform: scale(1.2);
+            transition: 1s;
+            background: vr.$color-btn;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
     }
+   
 
     &__card1
     {
@@ -262,4 +269,15 @@
         }
     }
 }
+@keyframes scale-up-ver-bottom {
+    0% {
+      transform: scaleY(0.4);
+      transform-origin: 0% 100%;
+    }
+    100% {
+      transform: scaleY(1);
+      transform-origin: 0% 100%;
+    }
+  }
+  
 /*=====  End of Restaurant  ======*/

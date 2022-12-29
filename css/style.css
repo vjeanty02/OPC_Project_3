@@ -185,28 +185,28 @@
 }
 .restaurant__iheart--regular {
   grid-area: 1/4/3/5;
-  text-align: right;
-  font-size: 20px;
+  margin: auto;
+  font-size: 30px;
   color: #000;
-  padding-right: 5px;
+  padding: 5px;
 }
 .restaurant__iheart--solid {
+  padding: 5px;
   grid-area: 1/4/3/5;
-  text-align: right;
+  margin: auto;
+  font-size: 10px;
+  color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+}
+.restaurant__iheart--solid:hover {
   font-size: 30px;
-  background-image: linear-gradient(to bottom, #FF79DA 5%, #9356DC 100%);
-  background-size: 100%;
+  transform: scale(1.2);
+  transition: 1s;
+  background: linear-gradient(to bottom, #FF79DA 5%, #9356DC 100%);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  cursor: pointer;
-  transition: all 0.5s;
-  padding: 5px;
-  overflow: hidden;
-}
-.restaurant__iheart--solid:hover {
-  overflow: visible;
 }
 .restaurant__card1 {
   grid-area: 2/2/4/3;
@@ -253,6 +253,16 @@
     grid-area: 3/2/4/3;
   }
 }
+@keyframes scale-up-ver-bottom {
+  0% {
+    transform: scaleY(0.4);
+    transform-origin: 0% 100%;
+  }
+  100% {
+    transform: scaleY(1);
+    transform-origin: 0% 100%;
+  }
+}
 /*=====  End of Restaurant  ======*/
 /*=============================================
 =            Color            =
@@ -268,14 +278,19 @@ footer {
   max-width: 1400px;
   margin: auto;
   display: flex;
+  gap: 10px;
   flex-direction: column;
 }
 .footer__link {
   color: #fff;
 }
+.footer__link:hover {
+  text-decoration: underline;
+}
 .footer__heading {
   color: #fff;
   font-family: "Shrikhand", cursive;
+  font-weight: 300;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -10,14 +10,20 @@ footer
     max-width: 1400px;
     margin: auto;
     display: flex;
+    gap: 10px;
     flex-direction: column;
     &__link
     {
         color : #fff;
+        &:hover
+        {
+            text-decoration: underline;
+        }
     }
     &__heading
     {
         color : #fff;
         font-family: "Shrikhand", cursive;
+        font-weight: 300;
     }
 }
