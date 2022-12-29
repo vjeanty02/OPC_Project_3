@@ -2,7 +2,7 @@
 
 .header
 {
-    @include mx.container($border:0, $background:#fff, $padding:25px);
+    @include mx.container($border:0, $background:#fff, $padding:20px);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
@@ -16,5 +16,6 @@
     {
         grid-area: 1 / 2 / 2 / 3;
         text-align: center;
+        font-family: "Shrikhand", cursive;
     }
 }

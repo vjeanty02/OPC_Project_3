@@ -43,3 +43,30 @@
     background:$background;
     border-radius:$border;
   }
+
+@mixin explorer__btn
+{
+    background: linear-gradient(to bottom, #FF79DA 5%, #9356DC 100%);
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 30px;
+    box-shadow: 4px 4px 8px -2px #d0d0d0;
+    border: 0;
+    padding: 15px 20px;
+    cursor: pointer;
+        &:hover
+        {
+            box-shadow: 4px 4px 8px -2px darken(#d0d0d0,15%);
+            opacity: 0.9;
+        }
+}
+@mixin iheart--color
+{
+  background-image: linear-gradient(to bottom, #FF79DA 5%, #9356DC 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}

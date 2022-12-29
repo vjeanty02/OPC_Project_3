@@ -3,7 +3,7 @@
 
 footer
 {
-    @include mx.container($border:0, $background:#000, $padding:20px);
+    @include mx.container($border:0, $background:vr.$color-footer, $padding:20px);
 }
 .footer
 {
@@ -11,8 +11,13 @@ footer
     margin: auto;
     display: flex;
     flex-direction: column;
-    &__link, &__heading
+    &__link
     {
         color : #fff;
+    }
+    &__heading
+    {
+        color : #fff;
+        font-family: "Shrikhand", cursive;
     }
 }
