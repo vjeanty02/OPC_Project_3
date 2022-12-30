@@ -27,6 +27,10 @@
   align-self: center;
   align-items: center;
 }
+.header__button i {
+  font-size: 20px;
+  color: black;
+}
 .header__logo {
   grid-area: 1/2/2/3;
   text-align: center;
