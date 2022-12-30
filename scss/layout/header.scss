@@ -5,10 +5,10 @@
 =============================================*/
 .header
 {
-    @include mx.container($border:0, $background:#fff, $padding:20px);
+    @include mx.container($border:0, $background:#fff, $padding:20px, $margin:0);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
+    grid-template-rows: 1fr;
     &__button
     {
         grid-area: 1 / 1 / 2 / 2;
