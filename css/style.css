@@ -222,6 +222,7 @@
   transform: scale(1.2);
   transition: 1s;
   background: linear-gradient(to bottom, #FF79DA 5%, #9356DC 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -341,6 +342,7 @@
   transform: scale(1.2);
   transition: 1s;
   background: linear-gradient(to bottom, #FF79DA 5%, #9356DC 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
