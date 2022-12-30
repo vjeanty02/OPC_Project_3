@@ -1,7 +1,7 @@
 @use "../utils/mixin.scss" as mx;
 @use "../utils/variable.scss" as vr;
 /*=============================================
-=            menu            =
+=            menu          =
 =============================================*/ 
   .menu {
     @include mx.flex-column($gap:30px);
