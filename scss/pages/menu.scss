@@ -1,15 +1,123 @@
-.menu
-{
-    &__img
+@use "../utils/mixin.scss" as mx;
+@use "../utils/variable.scss" as vr;
+/*=============================================
+=            menu            =
+=============================================*/ 
+  .menu {
+    @include mx.flex-column($gap:30px);
+    @include mx.container($border:20px, $background:vr.$color-working-card, $padding: 30px, $margin:-50px auto 0 auto);
+    max-width: 1400px;
+    position: relative;
+    &__image
     {
         width: 100%;
-        height: 500px;
-        object-fit: cover; 
+        height: auto;
+        max-height: 500px;
+        object-fit: cover;
     }
-    &__btn
+    &__container-heading
     {
-
+        @include mx.grid($columns:repeat(7, 1fr) 50px,$rows:1fr,$gap:0px);
+        @include mx.animation;
     }
-}
+    &__heading
+    {
+        font-family: "Shrikhand", cursive;
+        grid-area: 1 / 1 / 2 / 8;
+    }
+    &__iheart--regular
+    {
+        grid-area: 1 / 8 / 2 / 9;
+        @include mx.heart--regular;
+    }
+    &__iheart--solid
+    {
+        grid-area: 1 / 8 / 2 / 9;
+        @include mx.heart--solid;
+    } 
+    &__container-button
+    {
+      padding: 40px 0 20px 0;
+      @include mx.flex-center($gap:0px)
+    }
     
+    &__button-commander {
+      @include mx.explorer__btn;
+    }
+  }
 
+  .menu-section
+  {
+    @include mx.flex-column($gap:20px);
+    @include mx.animation;
+  
+    &__heading
+    {
+        @include mx.underline;
+    }
+
+    &__card {
+        @include mx.flex-between($gap:10px);
+        @include mx.container($border:20px, $background:#ffffff, $padding: 0, $margin:0);
+        box-shadow: 4px 4px 8px -2px #d0d0d0;
+        max-width: 100%;
+        overflow: hidden;
+        
+        cursor: pointer;
+        white-space: nowrap;
+      }
+      &__card span {
+        display: flex;
+      }
+      &__card span p {
+        font-weight: bold;
+        display: flex;
+        align-items: flex-end;
+        padding: 20px;
+      }
+      &__card div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+        overflow: hidden;
+      }
+      &__card div * {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      &__card:hover .fa-circle-check {
+        margin-right: 0;
+        transform: rotate(360deg);
+      }
+  }
+
+  .fa-circle-check {
+    padding: 20px;
+    font-size: 30px;
+    -webkit-text-stroke: 1px #99E2D0;
+    color: #ffffff;
+    border-radius: 0px 15px 15px 0px;
+    margin-right: -70px;
+    transform: rotate(0deg);
+    transition: margin-right 0.5s, transform 0.5s;
+  }
+  
+  .menu-section__container-icheck {
+    background-color: #99E2D0;
+    border-radius: 0px 15px 15px 0px;
+  }
+
+  @keyframes animate-fade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+ 
+  
+ 

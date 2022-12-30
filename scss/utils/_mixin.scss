@@ -97,6 +97,7 @@
   color: transparent;
   -webkit-background-clip: text;
   -moz-background-clip: text;
+  cursor: pointer;
   
   &:hover
   {
@@ -108,5 +109,20 @@
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+}
+@mixin underline
+{
+  padding-bottom: 10px;
+  background: linear-gradient(to right, #99E2D0, #99E2D0) no-repeat;
+  background-size: 50px 4px;
+  background-position: left bottom;
+}
+
+@mixin animation
+{
+  animation-duration: 1s;
+  animation-name: animate-fade;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
 }
 
