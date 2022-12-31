@@ -49,7 +49,7 @@
   .menu-section
   {
     @include mx.flex-column($gap:20px);
-    @include mx.animation;
+    @include mx.animation-menu;
   
     &__heading
     {
