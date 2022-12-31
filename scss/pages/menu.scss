@@ -18,7 +18,7 @@
     &__container-heading
     {
         @include mx.grid($columns:repeat(7, 1fr) 50px,$rows:1fr,$gap:0px);
-        @include mx.animation;
+        @include mx.animation-menu;
     }
     &__heading
     {
@@ -45,7 +45,15 @@
       @include mx.explorer__btn;
     }
   }
-
+  .fa-circle-check {
+    padding: 20px;
+    font-size: 30px;
+    -webkit-text-stroke: 1px #99E2D0;
+    color: #ffffff;
+    border-radius: 0px 15px 15px 0px;
+    margin-right: -70px;
+    transition: all 0.5s;
+  }
   .menu-section
   {
     @include mx.flex-column($gap:20px);
@@ -93,16 +101,7 @@
       }
   }
 
-  .fa-circle-check {
-    padding: 20px;
-    font-size: 30px;
-    -webkit-text-stroke: 1px #99E2D0;
-    color: #ffffff;
-    border-radius: 0px 15px 15px 0px;
-    margin-right: -70px;
-    transform: rotate(0deg);
-    transition: margin-right 0.5s, transform 0.5s;
-  }
+  
   
   .menu-section__container-icheck {
     background-color: #99E2D0;
