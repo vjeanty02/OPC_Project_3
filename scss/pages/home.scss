@@ -31,7 +31,7 @@
 
     &__button{
         @include mx.explorer__btn;
-        transition: all 0.5s;
+        @include mx.animation-btn($opacity:0.8, $scale:1.02);
     }
     &__paragraph
     {
@@ -116,11 +116,7 @@
         box-shadow: 4px 4px 8px -2px vr.$color-shadow;
         gap: 20px;
         transition: all 0.5s;
-        &:hover
-        {
-            transform: scale(1.02);
-            box-shadow: 4px 4px 8px -2px darken(vr.$color-shadow,15%);
-        }
+        @include mx.animation-btn($opacity:1, $scale:1.02);
 
         div 
         {

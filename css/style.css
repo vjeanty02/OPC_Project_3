@@ -84,11 +84,12 @@
   border: 0;
   padding: 15px 20px;
   cursor: pointer;
-  transition: all 0.5s;
+  transition: transform 400ms;
 }
 .explorer__button:hover {
-  box-shadow: 4px 4px 8px -2px #aaaaaa;
-  opacity: 0.9;
+  transform: scale(1.02);
+  opacity: 0.8;
+  box-shadow: 4px 4px 8px -2px #9d9d9d;
 }
 .explorer__paragraph {
   font-weight: 300;
@@ -182,10 +183,12 @@
   box-shadow: 4px 4px 8px -2px #d0d0d0;
   gap: 20px;
   transition: all 0.5s;
+  transition: transform 400ms;
 }
 .restaurant__card:hover {
   transform: scale(1.02);
-  box-shadow: 4px 4px 8px -2px #aaaaaa;
+  opacity: 1;
+  box-shadow: 4px 4px 8px -2px #9d9d9d;
 }
 .restaurant__card div {
   display: grid;
@@ -223,8 +226,8 @@
 }
 .restaurant__iheart--solid:hover {
   font-size: 30px;
-  transform: scale(1.2);
-  transition: 1s;
+  transform: scale(1.1);
+  transition: 300ms;
   background: linear-gradient(to bottom, #FF79DA 5%, #9356DC 100%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -343,8 +346,8 @@
 }
 .menu__iheart--solid:hover {
   font-size: 30px;
-  transform: scale(1.2);
-  transition: 1s;
+  transform: scale(1.1);
+  transition: 300ms;
   background: linear-gradient(to bottom, #FF79DA 5%, #9356DC 100%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -368,10 +371,6 @@
   border: 0;
   padding: 15px 20px;
   cursor: pointer;
-}
-.menu__button-commander:hover {
-  box-shadow: 4px 4px 8px -2px #aaaaaa;
-  opacity: 0.9;
 }
 
 .fa-circle-check {
