@@ -104,8 +104,8 @@
   &:hover
   {
     font-size: 30px;
-    transform: scale(1.1);
-    transition: 300ms;
+    transform: scale(1.07);
+    transition: all 300ms;
     background: vr.$color-btn;
     background-clip: text;
     -webkit-background-clip: text;
@@ -121,20 +121,36 @@
   background-position: left bottom;
 }
 
-@mixin animation-menu
+@mixin menu--animation
 {
   animation-duration: 1s;
   animation-name: animate-fade;
   animation-delay: 0.5s;
   animation-fill-mode: backwards;
 }
-@mixin animation-btn($opacity, $scale)
+@mixin btn--animation($opacity, $scale)
 {
-  transition: transform 400ms;
+  cursor: pointer;
+  transition: all 400ms;
   &:hover {
     transform: scale($scale);
     opacity:$opacity;
     box-shadow: 4px 4px 8px -2px darken(#d0d0d0,20%);
+  }
+}
+
+@mixin card--animation
+{
+  cursor: pointer;
+  transition: all 0.3s;
+  &:hover
+  {
+      background-color: lighten($color: vr.$color-primary, $amount: 35%);
+      box-shadow: 4px 4px 8px -2px darken(vr.$color-shadow,15%);
+      i
+      {
+          color: lighten($color: vr.$color-primary, $amount: 1%);
+      }
   }
 }
 

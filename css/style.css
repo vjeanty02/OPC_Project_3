@@ -84,11 +84,12 @@
   border: 0;
   padding: 15px 20px;
   cursor: pointer;
-  transition: transform 400ms;
+  cursor: pointer;
+  transition: all 400ms;
 }
 .explorer__button:hover {
   transform: scale(1.02);
-  opacity: 0.8;
+  opacity: 0.9;
   box-shadow: 4px 4px 8px -2px #9d9d9d;
 }
 .explorer__paragraph {
@@ -139,7 +140,7 @@
   align-items: center;
   font-weight: bold;
   cursor: pointer;
-  transition: all 0.5s;
+  transition: all 0.3s;
 }
 .working__card:hover {
   background-color: #f2eafb;
@@ -183,7 +184,8 @@
   box-shadow: 4px 4px 8px -2px #d0d0d0;
   gap: 20px;
   transition: all 0.5s;
-  transition: transform 400ms;
+  cursor: pointer;
+  transition: all 400ms;
 }
 .restaurant__card:hover {
   transform: scale(1.02);
@@ -226,8 +228,8 @@
 }
 .restaurant__iheart--solid:hover {
   font-size: 30px;
-  transform: scale(1.1);
-  transition: 300ms;
+  transform: scale(1.07);
+  transition: all 300ms;
   background: linear-gradient(to bottom, #FF79DA 5%, #9356DC 100%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -346,8 +348,8 @@
 }
 .menu__iheart--solid:hover {
   font-size: 30px;
-  transform: scale(1.1);
-  transition: 300ms;
+  transform: scale(1.07);
+  transition: all 300ms;
   background: linear-gradient(to bottom, #FF79DA 5%, #9356DC 100%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -371,6 +373,13 @@
   border: 0;
   padding: 15px 20px;
   cursor: pointer;
+  cursor: pointer;
+  transition: all 400ms;
+}
+.menu__button-commander:hover {
+  transform: scale(1.02);
+  opacity: 0.9;
+  box-shadow: 4px 4px 8px -2px #9d9d9d;
 }
 
 .fa-circle-check {

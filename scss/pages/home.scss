@@ -31,7 +31,7 @@
 
     &__button{
         @include mx.explorer__btn;
-        @include mx.animation-btn($opacity:0.8, $scale:1.02);
+        @include mx.btn--animation($opacity:0.9, $scale:1.02);
     }
     &__paragraph
     {
@@ -72,18 +72,8 @@
         box-shadow: 4px 4px 8px -2px vr.$color-shadow;
         align-items: center;
         font-weight: bold;
-        cursor: pointer;
-        transition: all 0.5s;
-        &:hover
-        {
-            background-color: lighten($color: vr.$color-primary, $amount: 35%);
-            box-shadow: 4px 4px 8px -2px darken(vr.$color-shadow,15%);
-            i
-            {
-                color: lighten($color: vr.$color-primary, $amount: 1%);
-            }
-        }
-        
+        @include mx.card--animation;
+               
     }
 }
 @media all and (max-width: 768px)
@@ -116,7 +106,7 @@
         box-shadow: 4px 4px 8px -2px vr.$color-shadow;
         gap: 20px;
         transition: all 0.5s;
-        @include mx.animation-btn($opacity:1, $scale:1.02);
+        @include mx.btn--animation($opacity:1, $scale:1.02);
 
         div 
         {

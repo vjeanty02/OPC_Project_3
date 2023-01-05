@@ -18,7 +18,7 @@
     &__container-heading
     {
         @include mx.grid($columns:repeat(7, 1fr) 50px,$rows:1fr,$gap:0px);
-        @include mx.animation-menu;
+        @include mx.menu--animation;
     }
     &__heading
     {
@@ -43,6 +43,7 @@
     
     &__button-commander {
       @include mx.explorer__btn;
+      @include mx.btn--animation($opacity:0.9, $scale:1.02);
     }
   }
   .fa-circle-check {
@@ -57,7 +58,7 @@
   .menu-section
   {
     @include mx.flex-column($gap:20px);
-    @include mx.animation-menu;
+    @include mx.menu--animation;
   
     &__heading
     {
