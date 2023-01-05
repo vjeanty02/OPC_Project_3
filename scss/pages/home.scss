@@ -1,6 +1,27 @@
 @use "../utils/mixin.scss" as mx;
 @use "../utils/variable" as vr;
 
+body
+{
+    z-index: 1000;
+}
+
+.loader {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    z-index: auto;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid vr.$color-primary;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
 
 /*=============================================
 =            Home-Location            =
@@ -44,7 +65,7 @@
 .working
 {
     @include mx.flex-column($gap:20px);
-    @include mx.container($border:0, $background:transparent, $padding:30px 20px, $margin:auto);
+    @include mx.container($border:0, $background:white, $padding:30px 20px, $margin:auto);
     box-sizing: content-box;
 
     max-width: 1400px;
@@ -195,13 +216,15 @@
         }
     }
 }
-@keyframes scale-up-ver-bottom {
-    0% {
-      transform: scaleY(0.4);
-      transform-origin: 0% 100%;
-    }
-    100% {
-      transform: scaleY(1);
-      transform-origin: 0% 100%;
-    }
-  }
+.header_animation, .home, .footer_animation
+{
+    animation: cat 0ms 2s both;
+}
+  @keyframes cat {
+	0% {
+		transform: translateX(-9999px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
