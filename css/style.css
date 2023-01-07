@@ -449,16 +449,23 @@ body {
   cursor: pointer;
   white-space: nowrap;
 }
-.menu-section__card span {
+.menu-section__card__container {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0px;
 }
-.menu-section__card span p {
+.menu-section__card__container p {
   font-weight: bold;
   display: flex;
   align-items: flex-end;
   padding: 20px;
 }
-.menu-section__card div {
+.menu-section__card__container-icheck {
+  background-color: #99E2D0;
+  border-radius: 0px 15px 15px 0px;
+}
+.menu-section__card .info {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -473,11 +480,6 @@ body {
 .menu-section__card:hover .fa-circle-check {
   margin-right: 0;
   transform: rotate(360deg);
-}
-
-.menu-section__container-icheck {
-  background-color: #99E2D0;
-  border-radius: 0px 15px 15px 0px;
 }
 
 @keyframes animation-fade {

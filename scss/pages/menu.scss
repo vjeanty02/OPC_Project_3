@@ -75,16 +75,20 @@
         cursor: pointer;
         white-space: nowrap;
       }
-      &__card span {
-        display: flex;
+      &__card__container{
+        @include mx.flex-between($gap:0px);
+        p{
+          font-weight: bold;
+          display: flex;
+          align-items: flex-end;
+          padding: 20px;
+        }
       }
-      &__card span p {
-        font-weight: bold;
-        display: flex;
-        align-items: flex-end;
-        padding: 20px;
+      &__card__container-icheck {
+        background-color: #99E2D0;
+        border-radius: 0px 15px 15px 0px;
       }
-      &__card div {
+      &__card .info {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -102,10 +106,7 @@
       }
   }
   
-  .menu-section__container-icheck {
-    background-color: #99E2D0;
-    border-radius: 0px 15px 15px 0px;
-  }
+  
 
   @keyframes animation-fade{
     0% {
