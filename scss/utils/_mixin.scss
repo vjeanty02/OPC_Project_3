@@ -1,5 +1,7 @@
 @use "../utils/variable" as vr;
 
+
+
 @mixin flex($gap:0px)
 {
   display: flex;
@@ -63,6 +65,9 @@
   grid-column-gap: $gap;
   grid-row-gap: $gap;
 }
+
+
+
 @mixin container($border, $background, $padding, $margin)
 {
   padding: $padding;
@@ -100,6 +105,20 @@
   color: transparent;
   -webkit-background-clip: text;
   -moz-background-clip: text;
+}
+@mixin underline
+{
+  padding-bottom: 10px;
+  background: linear-gradient(to right, #99E2D0, #99E2D0) no-repeat;
+  background-size: 50px 4px;
+  background-position: left bottom;
+}
+
+
+
+
+@mixin heart--animation
+{
   cursor: pointer;
   &:hover
   {
@@ -113,25 +132,10 @@
     -webkit-text-fill-color: transparent;
   }
 }
-@mixin underline
-{
-  padding-bottom: 10px;
-  background: linear-gradient(to right, #99E2D0, #99E2D0) no-repeat;
-  background-size: 50px 4px;
-  background-position: left bottom;
-}
-
-@mixin menu--animation
-{
-  animation-duration: 1s;
-  animation-name: animation-fade;
-  animation-delay: 0.5s;
-  animation-fill-mode: backwards;
-}
 @mixin btn--animation($opacity, $scale)
 {
   cursor: pointer;
-  transition: all 400ms;
+  transition: all 300ms;
   &:hover {
     transform: scale($scale);
     opacity:$opacity;
@@ -142,7 +146,7 @@
 @mixin card--animation
 {
   cursor: pointer;
-  transition: all 0.3s;
+  transition: all 300s;
   &:hover
   {
       background-color: lighten($color: vr.$color-primary, $amount: 35%);
@@ -154,4 +158,40 @@
   }
 }
 
+@mixin loader--animation
+{
+  animation: spin 2s linear infinite;
 
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+}
+
+@mixin home--animation
+{
+  animation: cat 0ms 1s both;
+    @keyframes cat {
+        0% {
+            transform: translateX(-9999px);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }  
+}
+@mixin menu--animation
+{
+  animation-name: animation-fade;
+  animation-delay: 0.5s;
+  animation-duration: 1s;
+  animation-fill-mode: backwards;
+  @keyframes animation-fade{
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
