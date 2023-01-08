@@ -254,6 +254,7 @@ body {
   padding: 8px;
   top: 20px;
   right: 20px;
+  color: #1b6150;
 }
 .restaurant h3 {
   grid-area: 1/1/2/4;
