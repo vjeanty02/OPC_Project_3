@@ -156,11 +156,11 @@
   transition: all 300s;
   &:hover
   {
-      background-color: lighten($color: vr.$color-primary, $amount: 35%);
+      background: lighten(vr.$color-primary,25%);
       box-shadow: 4px 4px 8px -2px darken(vr.$color-shadow,15%);
       i
       {
-          color: lighten($color: vr.$color-primary, $amount: 1%);
+          color: lighten(vr.$color-primary,1%);
       }
   }
 }

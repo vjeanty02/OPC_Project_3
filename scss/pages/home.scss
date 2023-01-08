@@ -93,8 +93,7 @@ body
         box-shadow: 4px 4px 8px -2px vr.$color-shadow;
         align-items: center;
         font-weight: bold;
-        @include mx.card--animation;
-               
+        @include mx.card--animation;         
     }
 }
 @media all and (max-width: 768px)

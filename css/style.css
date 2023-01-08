@@ -37,17 +37,14 @@
   font-family: "Shrikhand", cursive;
 }
 
-/*=============================================
-=            Home-General          =
-=============================================*/
 body {
   z-index: 1000;
 }
 
 .loader {
   position: fixed;
-  top: calc(50% - 60px);
-  left: calc(50% - 60px);
+  left: 50%;
+  top: 50%;
   z-index: auto;
   border: 16px solid #f3f3f3;
   border-radius: 50%;
@@ -56,6 +53,7 @@ body {
   height: 120px;
   animation: spin 2s linear infinite;
 }
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -64,7 +62,6 @@ body {
     transform: rotate(360deg);
   }
 }
-
 /*=============================================
 =            Home-Location            =
 =============================================*/
@@ -113,7 +110,7 @@ body {
   padding: 15px 20px;
   cursor: pointer;
   cursor: pointer;
-  transition: all 300ms;
+  transition: all 400ms;
 }
 .explorer__button:hover {
   transform: scale(1.02);
@@ -168,7 +165,7 @@ body {
   align-items: center;
   font-weight: bold;
   cursor: pointer;
-  transition: all 300s;
+  transition: all 0.3s;
 }
 .working__card:hover {
   background-color: #f2eafb;
@@ -213,7 +210,7 @@ body {
   gap: 20px;
   transition: all 0.5s;
   cursor: pointer;
-  transition: all 300ms;
+  transition: all 400ms;
 }
 .restaurant__card:hover {
   transform: scale(1.02);
@@ -315,6 +312,7 @@ body {
 .header_animation, .home, .footer_animation {
   animation: cat 0ms 1s both;
 }
+
 @keyframes cat {
   0% {
     transform: translateX(-9999px);
@@ -323,7 +321,6 @@ body {
     transform: translateX(0);
   }
 }
-
 /*=============================================
 =            menu          =
 =============================================*/
@@ -350,18 +347,10 @@ body {
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  animation-duration: 1s;
   animation-name: animation-fade;
   animation-delay: 0.5s;
-  animation-duration: 1s;
   animation-fill-mode: backwards;
-}
-@keyframes animation-fade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 .menu__heading {
   font-family: "Shrikhand", cursive;
@@ -382,6 +371,17 @@ body {
   color: transparent;
   -webkit-background-clip: text;
   -moz-background-clip: text;
+  cursor: pointer;
+}
+.menu__iheart--solid:hover {
+  font-size: 30px;
+  transform: scale(1.07);
+  transition: all 300ms;
+  background: linear-gradient(to bottom, #FF79DA 5%, #9356DC 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .menu__container-button {
   padding: 40px 0 20px 0;
@@ -401,7 +401,7 @@ body {
   padding: 15px 20px;
   cursor: pointer;
   cursor: pointer;
-  transition: all 300ms;
+  transition: all 400ms;
 }
 .menu__button-commander:hover {
   transform: scale(1.02);
@@ -423,18 +423,10 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  animation-duration: 1s;
   animation-name: animation-fade;
   animation-delay: 0.5s;
-  animation-duration: 1s;
   animation-fill-mode: backwards;
-}
-@keyframes animation-fade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 .menu-section__heading {
   padding-bottom: 10px;
@@ -490,6 +482,14 @@ body {
   transform: rotate(360deg);
 }
 
+@keyframes animation-fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /*=============================================
 =            Footer            =
 =============================================*/
