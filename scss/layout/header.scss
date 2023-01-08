@@ -23,9 +23,9 @@
     }
     &__logo
     {
+        max-width: 1400px;
+        margin: auto;
         grid-area: 1 / 2 / 2 / 3;
-        text-align: center;
-        font-family: "Shrikhand", cursive;
     }
 }
 
