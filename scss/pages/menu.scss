@@ -75,24 +75,25 @@
         cursor: pointer;
         white-space: nowrap;
       }
+     
       &__card__container{
         @include mx.flex-between($gap:0px);
+        align-items: flex-end;
         p{
           font-weight: bold;
           display: flex;
           align-items: flex-end;
-          padding: 20px;
+          padding: 8px 20px;
         }
       }
       &__card__container-icheck {
         background-color: #99E2D0;
         border-radius: 0px 15px 15px 0px;
       }
-      &__card .info {
-        display: flex;
-        flex-direction: column;
+       .info {
+        @include mx.flex-column($gap:5px);
         justify-content: center;
-        padding: 10px;
+        padding: 8px 10px;
         overflow: hidden;
       }
       &__card div * {

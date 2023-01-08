@@ -489,22 +489,24 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 0px;
+  align-items: flex-end;
 }
 .menu-section__card__container p {
   font-weight: bold;
   display: flex;
   align-items: flex-end;
-  padding: 20px;
+  padding: 8px 20px;
 }
 .menu-section__card__container-icheck {
   background-color: #99E2D0;
   border-radius: 0px 15px 15px 0px;
 }
-.menu-section__card .info {
+.menu-section .info {
   display: flex;
   flex-direction: column;
+  gap: 5px;
   justify-content: center;
-  padding: 10px;
+  padding: 8px 10px;
   overflow: hidden;
 }
 .menu-section__card div * {
