@@ -2,6 +2,9 @@
 
 
 
+/*=============================================
+=            Display            =
+=============================================*/
 @mixin flex($gap:0px)
 {
   display: flex;
@@ -67,7 +70,9 @@
 }
 
 
-
+/*=============================================
+=            Components            =
+=============================================*/
 @mixin container($border, $background, $padding, $margin)
 {
   padding: $padding;
@@ -116,8 +121,10 @@
 
 
 
-
-@mixin heart--animation
+/*=============================================
+=            Animation            =
+=============================================*/
+@mixin heart--animation /* transition */
 {
   cursor: pointer;
   &:hover
@@ -132,7 +139,7 @@
     -webkit-text-fill-color: transparent;
   }
 }
-@mixin btn--animation($opacity, $scale)
+@mixin btn--animation($opacity, $scale) /* transition */
 {
   cursor: pointer;
   transition: all 300ms;
@@ -143,7 +150,7 @@
   }
 }
 
-@mixin card--animation
+@mixin card--animation /* transition */
 {
   cursor: pointer;
   transition: all 300s;
@@ -158,7 +165,7 @@
   }
 }
 
-@mixin loader--animation
+@mixin loader--animation /* @keyframe */
 {
   animation: spin 2s linear infinite;
 
@@ -168,7 +175,7 @@
   }
 }
 
-@mixin home--animation
+@mixin home--animation /* @keyframe */
 {
   animation: cat 0ms 1s both;
     @keyframes cat {
@@ -180,7 +187,7 @@
         }
     }  
 }
-@mixin menu--animation
+@mixin menu--animation /* @keyframe */
 {
   animation-name: animation-fade;
   animation-delay: 0.5s;
