@@ -18,7 +18,7 @@
     &__container-heading
     {
         @include mx.grid($columns:repeat(7, 1fr) 50px,$rows:1fr,$gap:0px);
-        @include mx.menu--animation;
+        @include mx.menu-section1--animation;
     }
     &__heading
     {
@@ -34,6 +34,7 @@
     {
         grid-area: 1 / 8 / 2 / 9;
         @include mx.heart--solid;
+        @include mx.heart--animation;
     } 
     &__container-button
     {
@@ -58,7 +59,6 @@
   .menu-section
   {
     @include mx.flex-column($gap:20px);
-    @include mx.menu--animation;
   
     &__heading
     {
@@ -106,6 +106,19 @@
         transform: rotate(360deg);
       }
   }
+  .menu-section1
+  {
+    @include mx.menu-section1--animation;
+  }
+  .menu-section2
+  {
+    @include mx.menu-section2--animation;
+  }
+  .menu-section3
+  {
+    @include mx.menu-section3--animation;
+  }
+ 
   
   
 

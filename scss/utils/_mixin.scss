@@ -108,6 +108,7 @@
   margin: auto;
   font-size: 10px;
   color: transparent;
+  background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
 }
@@ -153,10 +154,10 @@
 @mixin card--animation /* transition */
 {
   cursor: pointer;
-  transition: all 300s;
+  transition: all 300ms;
   &:hover
   {
-      background: lighten(vr.$color-primary,25%);
+      background: lighten(vr.$color-primary,30%);
       box-shadow: 4px 4px 8px -2px darken(vr.$color-shadow,15%);
       i
       {
@@ -187,10 +188,40 @@
         }
     }  
 }
-@mixin menu--animation /* @keyframe */
+@mixin menu-section1--animation /* @keyframe */
 {
   animation-name: animation-fade;
   animation-delay: 0.5s;
+  animation-duration: 1s;
+  animation-fill-mode: backwards;
+  @keyframes animation-fade{
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+@mixin menu-section2--animation /* @keyframe */
+{
+  animation-name: animation-fade;
+  animation-delay: 1.5s;
+  animation-duration: 1s;
+  animation-fill-mode: backwards;
+  @keyframes animation-fade{
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+@mixin menu-section3--animation /* @keyframe */
+{
+  animation-name: animation-fade;
+  animation-delay: 2.5s;
   animation-duration: 1s;
   animation-fill-mode: backwards;
   @keyframes animation-fade{
