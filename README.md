@@ -4,14 +4,7 @@ C'est un projet étudiant du parcours développeur web Openclassroom qui consist
 
 ## Image du site
 
-### Desktop
-![Screenshot (57)](https://user-images.githubusercontent.com/61328054/212808057-95d39d48-19dc-4e59-bb83-865bff22aab1.png)
-
-### Tablette
-![Screenshot (55)](https://user-images.githubusercontent.com/61328054/212808084-d64ac7b6-1a28-42f1-b02d-efb31198d261.png)
-
-### Mobile
-![Screenshot (60)](https://user-images.githubusercontent.com/61328054/212808093-f50199bc-e559-4c43-a852-1e13c677d066.png)
+![Oh My food](https://user-images.githubusercontent.com/61328054/212808859-15da254e-0743-43a1-a120-ff2112a76e69.png)
 
 
 ## Voir le site
